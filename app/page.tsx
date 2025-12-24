@@ -43,7 +43,7 @@ export default function Home() {
 
       const body = buildRequest(classified.type as InputType, classified.payload);
 
-      const res = await fetch('http://localhost:3001/design/validate', {
+      const res = await fetch('https://innovites-assesment-backend.onrender.com/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(body),
